@@ -1,0 +1,97 @@
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*水平居中*/
+}
+
+.second-face{
+    display: flex;
+    justify-content: space-between;
+    /*使其与父容器两侧对齐*/
+}
+.second-face .pip:nth-of-type(2){
+    align-self: flex-end;
+    /*单独设定其与底部对齐*/
+}
+
+.fourth-face{
+    display: flex;
+    justify-content: space-between;
+    /*第四面这里我们分成两列，每列有两个点*/
+    /*水平侧两侧对齐*/
+}
+.fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*竖直侧先改主轴方向为竖直*/
+    /*利用justify-content竖直两侧对齐  */
+}
+
+/*-------请在此行下输入您的代码--------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+
+/* OTHER STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background: linear-gradient(#222, #333);
+}
+
+[class$="face"] {
+    margin: 16px;
+    padding: 4px;
+
+    background-color: #e7e7e7;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+
+    box-shadow:
+            inset 0 5px white,
+            inset 0 -5px #bbb,
+            inset 5px 0 #d7d7d7,
+            inset -5px 0 #d7d7d7;
+
+    border-radius: 10%;
+}
+
+.pip {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 4px;
+
+    background-color: #333;
+    box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
